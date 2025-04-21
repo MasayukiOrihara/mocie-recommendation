@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Host_Grotesk, Noto_Sans_JP } from 'next/font/google';
+import Header from '@/components/header';
 import { cn } from '@/lib/utils';
 import "./globals.css";
 
@@ -36,6 +37,7 @@ export default function RootLayout({
         )}
       >
         <main className="p-8 pt-4 bg-slate-50/50 shadow-2xl drop-shadow-2xl">
+          <Header />
           {children}
         </main>
       </body>
